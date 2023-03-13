@@ -28,6 +28,10 @@ public class MainCommand implements CommandExecutor {
             return true;
         }
 
+        if (args.length >= 0) {
+            ((Player) sender).performCommand("aichat help");
+        }
+
         Player player = (Player) sender;
         if (args.length >= 0) {
             switch (args[0]) {
@@ -42,11 +46,11 @@ public class MainCommand implements CommandExecutor {
                     player.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ &r"));
                     sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ &aSurvival Manager For Minecraft Server\n&8[&cChatGPT&8] &b→ &r" +
                             "\n   &a&lChatGPT: \n" +
-                            "   &r&2/caichat help    &7Shows this message\n" +
+                            "   &r&2/aichat help    &7Shows this message\n" +
                             "   &b&lOthers: \n" +
-                            "   &r&9/caichat reload [config] / [plugin]    &7Reloads config/plugin\n" +
-                            "   &r&9/caichat version    &7Displays the current and latest version\n" +
-                            "   &r&9/caichat [text]    &7Ask ChatGPT for message\n"
+                            "   &r&9/aichat reload [config] / [plugin]    &7Reloads config/plugin\n" +
+                            "   &r&9/aichat version    &7Displays the current and latest version\n" +
+                            "   &r&9/aichat [text]    &7Ask ChatGPT for message\n"
                     ));
 
                     player.sendMessage("\n    ");
