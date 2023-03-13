@@ -31,14 +31,19 @@ public class ASKCommand implements CommandExecutor, TabCompleter {
     private static String response;
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
-        int maxThreads = FileManager.config.getInt("maxThreads");
 
         Player player = (Player) sender;
+
+        if (!(player.hasPermission("cai.ask") || player.hasPermission("cai.*"))) {
+            player.sendMessage(FileManager.config.getString("No-Permission"));
+            return true;
+        }
 
         if (args.length < 1) {
             player.sendMessage(ChatColor.RED + "Usage: /ask Hello, how are you today?");
             return true;
         }
+        int maxThreads = FileManager.config.getInt("maxThreads");
 
         player.sendMessage(ColorUtil.translate(FileManager.config.getString("prefix") + "&7 Question: " + String.join(" ", args)));
 
