@@ -61,7 +61,7 @@ public class MainCommand implements CommandExecutor {
                     }
                     sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ Your version is: &c" + Main.getInstance().getDescription().getVersion()));
                     return true;
-                case "update":
+                /*case "update":
                     if (!(sender.hasPermission("cai.set") || sender.hasPermission("cai.*"))) {
                         sender.sendMessage(ColorUtil.translate(FileManager.config.getString("No-Permission")));
                         return true;
@@ -69,7 +69,7 @@ public class MainCommand implements CommandExecutor {
                     if (args.length > 1) {
                         switch (args[1]) {
 
-                            /*case "broadcast":
+                            case "broadcast":
                                 if (args.length <= 2) {
                                     sender.sendMessage(ColorUtil.translate("&8[&aSurvival&8] &con/off."));
                                     return true;
@@ -97,12 +97,12 @@ public class MainCommand implements CommandExecutor {
                                     broadcasting = "&aEnabled";
                                 }
                                 sender.sendMessage(ColorUtil.translate("&8[&aSurvival&8] &aBroadcast is now " + broadcasting));
-                                return true;*/
+                                return true;
                         }
                     } else {
                         sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ Please choose between key"));
                     }
-                    return true;
+                    return true;*/
                 case "reload":
                     if (!(sender.hasPermission("cai.reload") || sender.hasPermission("cai.*"))) {
                         sender.sendMessage(ColorUtil.translate(new FileManager().getStringFromConfig("No-Permission")));
