@@ -6,10 +6,10 @@
 ![Build](https://img.shields.io/github/actions/workflow/status/CodeITForFun/AIChat/maven.yml?style=for-the-badge)
 ![Contributors](https://img.shields.io/github/contributors-anon/CodeITForFun/AIChat?style=for-the-badge)
 ![Version](https://img.shields.io/github/v/tag/CodeITForFun/AIChat?style=for-the-badge)
-<h1 align="center">Web Server For Minecraft Server</h1>
+<h1 align="center">AiChat Plugin For Minecraft Server</h1>
 <h5 align="center">
     <strong>
-        Its basic WebServer for any Minecraft Server. You can host any HTML file.
+        Use OpenAI ChatGPT in Minecraft.
     </strong>
 </h5>
 
