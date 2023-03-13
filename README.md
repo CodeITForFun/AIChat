@@ -16,7 +16,7 @@
 ## More Info
 - <a href="https://discord.gg/Y49sdJHJET">Discord</a>
 - <a href="https://bstats.org/plugin/bukkit/AIChat/17944">bStats</a>
-- <a href="">SpigotMC</a>
+- <a href="https://www.spigotmc.org/resources/aichat-use-chatgpt-in-minecraft.108600/">SpigotMC</a>
 
 #  Usage:
 - /aichat
