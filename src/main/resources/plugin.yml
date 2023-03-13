@@ -1,0 +1,10 @@
+name: AIChat
+version: '${project.version}'
+main: tech.codemein.aichat.Main
+api-version: 1.19
+commands:
+  ask:
+    usage: /ask
+  aichat:
+    usage: /ai
+    aliases: /aichat, /codemeinai, /openai, /chatgpt

@@ -1,0 +1,31 @@
+########################################################################
+#                                                                      #
+#                     The ChatAI Minecraft Plugin                      #
+#                                                                      #
+########################################################################
+#                                                                      #
+# By using this plugin, you automatically accept Minecraft EULA!       #
+# If you have any problem, you can ask on our Discord for Support in   #
+# channel #📃┃help or by forum channel called #📈┃support. If you     #
+# found any bug, please report it. It'll help you and for our plugin!  #
+#                                                                      #
+########################################################################
+#          Created by: Radekminecraft    and    FungY911               #
+########################################################################
+#                                                                      #
+#                                                                      #
+#                   All Permissions for this plugin                    #
+#                                                                      #
+#                          All Perms - cai.*                           #
+#                          Ask Command - cai.ask                       #
+#              Get Version of the Plugin - cai.ver                      #
+#              Plugin Reload - cai.reload                               #
+#                                                                      #
+#                                                                      #
+########################################################################
+prefix: "&8[&cChatGPT&8] &b→ &7" # Prefix for /ask command
+gpt-type: "openai" # For now is there only openai, and its recommended
+openaiKey: "SET_THIS_TO_OPEN_AI_API_KEY"
+
+No-Permission: "&cYou dont have permissions to do this command"
+Version: "1.0.0" # Do not edit this line!
