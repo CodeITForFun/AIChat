@@ -6,7 +6,7 @@
 
     <groupId>tech.codemein</groupId>
     <artifactId>AIChatBot</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-beta</version>
     <packaging>jar</packaging>
 
     <name>AIChat</name>

@@ -10,8 +10,6 @@ import tech.codemein.aichat.Main;
 import tech.codemein.aichat.managers.FileManager;
 import tech.codemein.aichat.utils.ColorUtil;
 
-import java.io.File;
-
 public class MainCommand implements CommandExecutor {
     private String SpigotMCUrlForPlugin = null;
 
