@@ -20,6 +20,8 @@ public class PluginManager {
         Main.getInstance().getLogger().info("Loading Commands.");
         Main.getInstance().getCommand("ask").setExecutor(new ASKCommand());
         Main.getInstance().getCommand("aichat").setExecutor(new MainCommand());
+
+        UpdateManager.startUpdater();
     }
 
 }

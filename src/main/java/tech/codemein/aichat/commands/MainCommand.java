@@ -61,7 +61,7 @@ public class MainCommand implements CommandExecutor {
                         sender.sendMessage(ColorUtil.translate(FileManager.config.getString("No-Permission")));
                         return true;
                     }
-                    sender.sendMessage(ColorUtil.translate("&8[&aSurvival&8] &bYour version is: &c" + Main.getInstance().getDescription().getVersion()));
+                    sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ Your version is: &c" + Main.getInstance().getDescription().getVersion()));
                     return true;
                 case "update":
                     if (!(sender.hasPermission("cai.set") || sender.hasPermission("cai.*"))) {
@@ -102,30 +102,30 @@ public class MainCommand implements CommandExecutor {
                                 return true;*/
                         }
                     } else {
-                        sender.sendMessage(ColorUtil.translate("&8[&aSurvival&8] &bPlease choose between broadcast, quit or join message"));
+                        sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ Please choose between key"));
                     }
                     return true;
                 case "reload":
-                    if (!(sender.hasPermission("sm.reload") || sender.hasPermission("sm.*"))) {
+                    if (!(sender.hasPermission("cai.reload") || sender.hasPermission("cai.*"))) {
                         sender.sendMessage(ColorUtil.translate(new FileManager().getStringFromConfig("No-Permission")));
                         return true;
                     }
                     if(args.length > 1) {
                         switch (args[1]) {
                             case "config":
-                                sender.sendMessage(ColorUtil.translate("&8[&aSurvival&8] &7Reloading config..."));
+                                sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ &7Reloading config..."));
                                 new FileManager().reloadConfig();
-                                sender.sendMessage(ColorUtil.translate("&8[&aSurvival&8] &aReloaded"));
+                                sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ &aReloaded"));
                                 return true;
                             case "plugin":
-                                sender.sendMessage(ColorUtil.translate("&8[&aSurvival&8] &7Reloading plugin... (This don't have 100% effectivity)"));
+                                sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ &7Reloading plugin... (This don't have 100% effectivity)"));
                                 Bukkit.getPluginManager().disablePlugin(Main.getInstance());
                                 Bukkit.getPluginManager().enablePlugin(Main.getInstance());
-                                sender.sendMessage(ColorUtil.translate("&8[&aSurvival&8] &aReloaded"));
+                                sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ &aReloaded"));
                                 return true;
                         }
                     } else {
-                        sender.sendMessage(ColorUtil.translate("&8[&aSurvival&8] &bPlease choose config/plugin"));
+                        sender.sendMessage(ColorUtil.translate("&8[&cChatGPT&8] &b→ &bPlease choose config/plugin"));
                     }
                     return true;
             }
